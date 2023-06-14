@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Intro Unit 2 Starter Code 2</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <style>
+.grid-container {
+  display: grid;
+  grid-template-columns: 1 1 1;
+  background-color: #000000;
+  padding: 10px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 50%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000000;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.grid-item {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+body {background-color: Black;}
+</style>
+</head>
+
+<body>
+     <h1 style="text-align:center;">Slow down!</h1>
+        <hr>
+        <img class="center" src="https://www.shutterstock.com/image-photo/cat-crosses-road-front-car-260nw-599801339.jpg">
+        <h2 style="text-align:center;">Slow down when you drive in a neighborhood</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h2 style="font-weight:Normal;">3 Things you can do to help</h2>
+              
+              <h3 style="font-weight:Normal;"> 1.Install Roadbumps</h3>
+              
+              <p>Installing roadbumps will force drivers to slow down to go over it</p>
+                <h3 style="font-weight:Normal;"> 2.Shoo them out of the road</h3>
+              
+              <p>Most cats and other animal like laying in the road for comfort so shoo them out the road when you can so they get used to being off the road</p>
+                <img  class="center" src="https://icatcare.org/app/uploads/2021/02/Road-cat-1-1200x600.jpg" alt="Cat in road">
+                <h3 style="font-weight:Normal;"> 3.Get road signs installed</h3>
+              
+              <p>People are less likly to zoom throu and hurt an animal if there are signs to warn them of animals in the area</p>
+                
+            </div>
+             <div class="grid-item">
+                 <h2 style="font-weight:Normal;">The danger cats and other animals are in</h2>
+           <!--Add text, images, and links for section 2 below!-->
+                 <div class="container">
+  <img class="center" src="https://static-az.vets-now.com/uploads/2018/10/Cat-road-traffic-accident.jpg" alt="Cat in road" >
+  <div class="overlay">
+      <div class="text"><h1><strong>Be careful they matter to someone</strong></h1></div>
+  </div>
+</div>
+                 <p>Due to reckless driving in neighborhood cats and other animals are in danger of geting hit by cars and getting injured or killed</p>
+                 
+            </div>
+             <div class="grid-item">
+                 <h2 style="font-weight:Normal;">Statistics</h2>
+              <!--Add text, images, and links for section 3 below!-->
+                 <p>Lots of cats are killed in neighborhoods due to pure reckless drivers not paying attention and speeding throu neborhoods</p>
+                 
+            </div>
+        </div>
+</body>
+
+</html>
+
